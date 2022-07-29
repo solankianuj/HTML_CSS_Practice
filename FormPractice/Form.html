@@ -19,20 +19,24 @@
         
              <div class="containt">
                 <label for="name" >Name</label>
-                <input type="text" id="nameIp" oninput="oo()">
+                <input type="text" id="nameIp" oninput="nameValidation()">
              </div>
-             <error class="error" for="error" id="errorOp" value="error"><p></p></error>
+             <error class="error" for="error" id="name-error" value="error"><p></p></error>
 
              <div class="containt">
                 <label for="pswd" >Password</label>
                 <input type="password" id="passwordIp">
              </div>
+             <error class="error" for="error" id="pswd-error" value="error"><p></p></error>
+
                
             
             <div class="containt">
                 <label for="email" >Email</label>
-                <input type="text" id="emailIp">
+                <input type="text" id="emailIp" oninput="emailValidation()">
             </div>
+            <error class="error" for="error" id="email-error" value="error"><p></p></error>
+
             <div class="containt">
                 <label for="url" >URL :</label>
                 <input type="text" id="urlIp">
