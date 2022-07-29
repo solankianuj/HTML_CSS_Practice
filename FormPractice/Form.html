@@ -58,7 +58,7 @@
              </div>
             <div class="containt">
                 <label for="search" >Search :</label>
-                <input type="text" id="searchIp">
+                <input type="search" id="searchIp">
             </div>
             <div class="containt">
                 <label for="date" >Date :</label>
@@ -66,7 +66,8 @@
             </div>
             <div class="containt">
                 <label for="salary" >Salary :</label>
-                <input type="range" id="salaryIp">
+                <input type="range" id="salaryIp"  min="30000" max="50000" step="100"  oninput="salaryValidation()">
+                <salary-output for="salary-output" id="salaryOp"><b></b></salary-output>
             </div>
         </div>
     </form>

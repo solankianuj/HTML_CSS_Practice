@@ -65,6 +65,23 @@ function emailValidation() {
           
         }
 
+            
+    function passwordValidation() {
+    
+        var pasword =document.getElementById("passwordIp").value;
+        var pwdReg=/^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*?/+])[A-Z a-z 0-9 -_.]{8,}/;
+
+            if (pwdReg.test(pasword) ) {
+           
+            document.getElementById("pswd-error").innerHTML="";
+            
+        }
+            else
+            document.getElementById("pswd-error").innerHTML ="pasword is Invalid";   
+        
+          
+        }
+
         function submit() {
             location.reload();
         }
