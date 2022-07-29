@@ -20,22 +20,25 @@
              <div class="containt">
                 <label for="name" >Name</label>
                 <input type="text" id="nameIp" oninput="nameValidation()">
+                <error class="error" for="error" id="name-error" value="error"><p></p></error>
              </div>
-             <error class="error" for="error" id="name-error" value="error"><p></p></error>
+         
 
              <div class="containt">
                 <label for="pswd" >Password</label>
-                <input type="password" id="passwordIp">
+                <input type="password" id="passwordIp" oninput="passwordValidation() ">
+                <error class="error" for="error" id="pswd-error" value="error"><p></p></error>
              </div>
-             <error class="error" for="error" id="pswd-error" value="error"><p></p></error>
+             
 
                
             
             <div class="containt">
                 <label for="email" >Email</label>
                 <input type="text" id="emailIp" oninput="emailValidation()">
+                <error class="error" for="error" id="email-error" value="error"><p></p></error>
             </div>
-            <error class="error" for="error" id="email-error" value="error"><p></p></error>
+           
 
             <div class="containt">
                 <label for="url" >URL :</label>
@@ -43,12 +46,16 @@
             </div>
             <div class="containt">
                 <label for="number" >Mobile :</label>
-                <input type="number" id="numberIp">
+                <input type="number" id="numberIp" oninput="mobileValidation()">
+                <error class="error" for="error" id="mobile-error" value="error"><p></p></error>
             </div>
+            
+
             <div class="containt">
                 <label for="telephone" >TelePhone :</label>
-                <input type="number" id="telephoneIp">
-            </div>
+                <input type="number" id="telephoneIp" oninput="telephoneValidation() ">
+                <error class="error" for="error" id="tele-error" value="error"><p></p></error>
+             </div>
             <div class="containt">
                 <label for="search" >Search :</label>
                 <input type="text" id="searchIp">
@@ -65,7 +72,7 @@
     </form>
     </main>
     <footer>
-        <button type="button" id="submit" name="submit" >submit</button>
+        <button type="button" id="submit" name="submit"  onclick="submit()">submit</button>
     </footer>
 
     
